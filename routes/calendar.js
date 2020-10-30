@@ -39,7 +39,8 @@ router.post('/', async(req, res)=> {
       return
     }
 
-    const dateTime = moment.tz(`${date} ${time}`, 'YYYY-MM-DD HH:mm').format()
+    const a = moment(`${date} ${time}`, 'YYYY-MM-DD HH:mm').format()
+    var dateTime = moment.tz(`${a}`, "Europe/Frankfurt")
 
     const event = {
         summary: name,
