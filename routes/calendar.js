@@ -39,8 +39,7 @@ router.post('/', async(req, res)=> {
       return
     }
 
-    const a = moment(`${date} ${time}`, 'YYYY-MM-DD HH:mm').format()
-    var dateTime = moment.tz(`${a}`, "Europe/Frankfurt")
+    const dateTime = moment(`${date} ${time}`, 'YYYY-MM-DD HH:mm').format()
 
     const event = {
         summary: name,
@@ -48,11 +47,11 @@ router.post('/', async(req, res)=> {
         colorId: 1,
         start: {
           dateTime: dateTime,
-          timeZone: 'Europe/Frankfurt',
+          timeZone: 'Europe/Dublin',
         },
         end: {
           dateTime: dateTime,
-          timeZone: 'Europe/Frankfurt',
+          timeZone: 'Europe/Dublin',
         }, 
         attendees: [
           {
