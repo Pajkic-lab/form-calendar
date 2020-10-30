@@ -47,11 +47,11 @@ router.post('/', async(req, res)=> {
         colorId: 1,
         start: {
           dateTime: dateTime,
-          timeZone: 'Europe/Dublin',
+          timeZone: 'Europe/Belgrade',
         },
         end: {
           dateTime: dateTime,
-          timeZone: 'Europe/Dublin',
+          timeZone: 'Europe/Belgrade',
         }, 
         attendees: [
           {
