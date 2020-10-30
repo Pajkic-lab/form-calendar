@@ -47,7 +47,7 @@ router.post('/', async(req, res)=> {
         colorId: 1,
         start: {
           dateTime: dateTime,
-          timeZone: 'Europe/Frankfurt',
+          timeZone: 'Europe/Belgrade',
         },
         end: {
           dateTime: dateTime,
